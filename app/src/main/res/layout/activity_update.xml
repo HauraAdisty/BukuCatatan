@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".UpdateNoteActivity">
+
+    <TextView
+        android:id="@+id/EditNotHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Catatan"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/UpdatesaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/updatetitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Masukkan Judul"
+        android:background="@drawable/blue_border"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/EditNotHeading"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/updatecontentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Masukkan Deskripsi"
+        android:background="@drawable/blue_border"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/updatetitleEditText"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="top"/>
+
+
+
+</RelativeLayout>
